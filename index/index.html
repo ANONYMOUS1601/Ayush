@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="/img/WhatsApp Image 2024-01-24 at 20.53.55.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+
+          
+            <div class="logo">
+                <h1>Port<span>folio</span></h1>
+            </div>
+
+           
+            <ul class="menu-list">
+                <a href="#home"><li>Home</li></a>
+                <a href="#work"><li>About</li></a>
+                <a href="#Service"><li>Services</li></a>
+                <!-- <li><a href="#project">Skill</a></li> -->
+                <a href="#ContactUs"><li>Contact</li></a>
+            </ul>
+
+            <div class="humbarger">
+                <div class="bar"></div>
+                <div class="bar2 bar"></div> 
+               </div>
+        </nav>
+    </header>
+
+
+    <section class="showcase-area" id="home">
+        <div class=" showcase-container container">
+
+            <div class=" showcase-div1 ">
+                <div class="photo">
+
+                </div>
+                <h3>Hello!</h3>
+                <h1>I'm Ayush</h1>
+                <h3> I am a</h3>
+                <h3> WEB DEVELOPER</h3>
+                <a="#" class="btn btn-primary">Hire Me</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="about" id="work">
+        <div class="main container">
+            <div class="about-img">
+                <img src="/img/WhatsApp Image 2024-01-24 at 20.53.55.jpeg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>About ME</h2>
+                <h5>Developer <span>& Designer</span></h5>
+                <p>I am a versatile developer and designer, combining technical expertise in coding with a keen eye for
+                    innovative and visually compelling design solutions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <div class="service container" id="Service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class=" fas fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste deserunt cum magni
+                        recusandae laboriosam.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class=" fas fa-user"></i>
+                <h5>Web Development</h5>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste deserunt cum magni
+                        recusandae laboriosam.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class=" fas fa-bell"></i>
+                <h5>Web Development</h5>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste deserunt cum magni
+                        recusandae laboriosam.</p>
+
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-me" id="ContactUs">
+        <div class="wrapper">
+            <div class="title">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Name">
+                    <input type="text" class="input" placeholder="Email Address">
+                    <input type="text" class="input" placeholder="Phone">
+                    <input type="text" class="input" placeholder="Subject">
+                </div>
+                <div class="msg">
+                    <textarea placeholder="Message" style="outline: none;"></textarea>
+                    <div class="btn-contact">send</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-nav-item">
+            <div class="footer-logos"><a href=""><img src="/img/icons8-instagram.svg" alt=""></a></div>
+            <div class="footer-logos"><a href=""><img src="/img/icons8-linkedin.svg" alt=""></a></div>
+            <div class="footer-logos"><a href=""><img src="/img/icons8-twitter.svg" alt=""></a></div>
+
+        </div>
+        <div class="footer-text">
+            <p>ayush mankotia </p>
+
+        </div>
+
+    </footer>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+
+// Hamburger Toggle
+var hamburger = document.querySelector('.humbarger');
+var menuList = document.querySelector('.menu-list');
+
+if (hamburger) {
+    hamburger.addEventListener('click', function (event) {
+        if (menuList.style.display === 'none' || menuList.style.display === '') {
+            menuList.style.display = 'block';
+        } else {
+            menuList.style.display = 'none';
+        }
+        event.preventDefault();
+    });
+}
+
+// Menu Item Click
+var menuItems = document.querySelectorAll('.menu-list li a');
+if (menuItems) {
+    menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener('click', function (event) {
+            if (window.innerWidth < 768) {
+                menuList.style.display = 'none';
+                event.preventDefault();
+            }
+        });
+    });
+}
+
+});
+
+    </script>
+</body>
+
+</html>
