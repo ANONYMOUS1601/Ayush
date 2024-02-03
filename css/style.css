@@ -66,7 +66,7 @@ body {
   }
   
   header .navigation .logo{
-    margin-left: 20px;
+    margin-left: 30px;
   }
   
   header .navigation .logo h1{
@@ -85,19 +85,20 @@ body {
     color: white;
   }
   
-  header .navigation .humbarger {
+  header .navigation .hamburger {
     margin-right: 20px;
     display: none;
    }
    
-  header .navigation .humbarger .bar{
+  header .navigation .hamburger .bar{
+    
     width: 30px;
     height: 2px;
     margin: 7px;
     background: white;
    }
   
-  header .navigation .menu-list li a {
+  header .navigation .menu-list a   {
     color: white;
     font-size: 1.25rem;
     letter-spacing: 2px;
@@ -105,6 +106,10 @@ body {
     cursor: pointer;
     transition: color 1s ease, border 1s ease;
     text-decoration: none;
+    
+  }
+  header .navigation .menu-list a:hover  {
+    color: #1ba94c
     
   }
   
@@ -128,30 +133,36 @@ body {
       position: absolute;
       top: 12vh;
       min-width: 100%;
-      background: rgba(7, 7, 7, 0.938);
+      /* background: rgba(7, 7, 7, 0.938); */
+      background-color: transparent
+      ;
       text-align: center;
       display: none;
     }
   
     header .navigation .menu-list li {
+      color: #000000;
+      font-weight: 500;
+      font-size: 2rem;
+
+      padding:5px;
       display: block;
     }
   
     header .navigation .menu-list li a {
       display: block;
       padding: 20px;
-      transition: color 1s ease, padding 1s ease, background-color 1s ease;
+      transition: color 1s ease, padding 1s ease;
   
     }
   
-    header .navigation .menu-list li a:hover{
-      color: #b1d4e0;
-      padding-left: 30px;
+    header .navigation .menu-list li:hover{
+      color: #1ba94c;
       background: rgba(177, 212, 224, 0.2);
     }
   
   
-    header .navigation .humbarger{
+    header .navigation .hamburger{
       display: block;
     }
   
@@ -194,7 +205,7 @@ body {
 
 .showcase-area {
     height: 100vh;
-    background-image: url('../img/bg1.jpeg');
+    /* background-image: url('bg=='); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
