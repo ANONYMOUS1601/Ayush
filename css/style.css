@@ -52,8 +52,9 @@ body {
 
 
 /* navbar styling */
-  
-  header .navigation {
+
+
+   header .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +92,7 @@ body {
    }
    
   header .navigation .hamburger .bar{
-    
+
     width: 30px;
     height: 2px;
     margin: 7px;
@@ -125,7 +126,7 @@ body {
   
   }
   
-  /* Large Mobile :480px. */
+  /* Large Mobile :480px.  */
   
   @media only screen and (max-width: 767px) {
   
@@ -160,7 +161,7 @@ body {
       color: #1ba94c;
       background: rgba(177, 212, 224, 0.2);
     }
-  
+   
   
     header .navigation .hamburger{
       display: block;
@@ -183,11 +184,11 @@ body {
     }
   
   }
-  
+   
   
   /* small mobile :320px. */
   
-  @media only screen and (max-width: 479px) {
+   @media only screen and (max-width: 479px) {
   
     .intro-inner .intro-content h1 {
       font-size: 2rem;
@@ -198,7 +199,7 @@ body {
       margin-top: 10px;
     }
   
-  }
+   } 
       
 /* #### styling showcase-arae */
 
@@ -223,16 +224,16 @@ body {
 }
 
 
-.main-text {
+/* .main-text {
     /* top: 50%;
     left: 50%;
     transform: translate(-50% -50%); */
     /* width: 100%;
-    height: 100%; */
-}
+    height: 100%; 
+ } */ 
 
 .showcase-div1 h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     width: fit-content;
 }
 
